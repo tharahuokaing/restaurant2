@@ -74,12 +74,12 @@
 <script>
     function playMetaVoice() {
         const text = "សូមអញ្ជើញភ្ញៀវទាំងអស់មកកាន់ភោជនីយដ្ឋាន ហួ កាំង។ នៅក្នុងពិភពឌីជីថលដ៏អស្ចារ្យនេះ ម្ហូបអាហារមិនមែនគ្រាន់តែជាអាហារទេ រាល់ម្ហូបអាហារទាំងអស់គឺជាការបកស្រាយដ៏វិសេសនៃអាណាចក្របុរាណ ដែលបានផ្លាស់ប្តូរទៅជាទម្រង់ឌីជីថល។ ហួ កាំង មិនមែនគ្រាន់តែជាកន្លែងសម្រាប់ទទួលទានអាហារប៉ុណ្ណោះទេ វាជាកន្លែងដែលកាស៊ីណូឌីជីថល, ធនាគារបែបឌីជីថល។ បានរួមបញ្ចូលគ្នាជាមួយនឹងការស្រាវជ្រាវបច្ចេកវិទ្យាដ៏ទំនើប។ នៅទីនេះ អ្នកនឹងទទួលបានបទពិសោធន៍ដ៏អស្ចារ្យ ដូចជាការចូលទៅក្នុងអាណាចក្រដែលគ្រប់យ៉ាងសុទ្ធតែជាឌីជីថល។ Where everything lives in the Digital World. Here, food isn’t just food, it’s light, and imagination. Every dish is like a story from the past, reborn in digital form.";
-    
+
         // Use SpeechSynthesisUtterance for the synthetic voice
         const msg = new SpeechSynthesisUtterance();
         msg.text = text;
         msg.lang = 'km-KH'; // Set to Khmer
-        
+
         // Meta-synthetic adjustment: lower pitch and slower rate sounds more "AI"
         msg.rate = 0.9; 
         msg.pitch = 1.1; 
@@ -122,28 +122,28 @@
       document.addEventListener('dragstart', e => e.preventDefault());
     })();
 </script>
-        
+
     </div>
 
     <div id="category-bar">
         <button class="btn-cat active" onclick="filter('All')">🍱 ទាំងអស់ (All)</button>
-	<button class="btn-cat" onclick="filter('Available')">📦 មាននៅក្នុងស្តុក (In Stock)</button>
+        <button class="btn-cat" onclick="filter('Available')">📦 មាននៅក្នុងស្តុក (In Stock)</button>
         <button class="btn-cat" onclick="filter('Food')">🍲 ម្ហូបអាហារ (Food)</button>
         <button class="btn-cat" onclick="filter('Cigarette')">🚬 បារី (Cigarette)</button>
         <button class="btn-cat" onclick="filter('Snack')">🍪 អាហារសម្រន់ (Snack)</button>
         <button class="btn-cat" onclick="filter('Wine')">🍷 ស្រាក្រហម (Wine)</button>
         <button class="btn-cat" onclick="filter('Alcohol')">🍾 ស្រាវីស្គី (Whisky)</button>
-    	<button class="btn-cat" onclick="filter('Coffee/Fresh Fruit')">🍹 ភេសជ្ជៈ (Coffee & Fresh Fruit)</button>
+            <button class="btn-cat" onclick="filter('Coffee/Fresh Fruit')">🍹 ភេសជ្ជៈ (Coffee & Fresh Fruit)</button>
         <button class="btn-cat" onclick="filter('Ice-cream')">🍦 ការ៉េម (Ice Cream)</button>
     </div>
 
     <div id="main-content">
-        <div id="menu"></div> 
+        <div id="menu"></div>
 
         <div id="cart">
             <div class="invoice-header">
                 <h2 style="color: var(--hologram-cyan); margin-bottom: 5px;">វិក្កយបត្រ / INVOICE</h2>
-                <p style="font-size: 0.8em; opacity: 0.8;">ភោជនីយដ្ឋាន ហួ កាំង (សាខាបាភ្នំ ខេត្តព្រៃវែង ព្រះរាជាណាចក្រកម្ពុជា)</p>
+                <p style="font-size: 0.8em; opacity: 0.8;">ភោជនីយដ្ឋាន ផ្កាយ ៥ ហួ កាំង (សាខាអូរស្មាច់ ខេត្តឧត្តមានជ័យ ព្រះរាជាណាចក្រកម្ពុជា)</p>
             </div>
 
             <div id="cart-list">
@@ -261,19 +261,19 @@
             border: 1px solid rgba(0, 255, 255, 0.2);
         ">
             <iframe 
-                src="sorry.png" 
+                src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2s!4v1715678901234!5m2!1skm!2s&z=2" 
                 width="100%" 
                 height="100%" 
                 style="border:0; filter: hue-rotate(170deg) invert(1) contrast(1.5) opacity(0.3);" 
                 allowfullscreen="" 
                 loading="lazy">
             </iframe>
-            
+
             <div class="scan-line"></div>
         </div>
 
         <div style="margin-top: 15px; position: relative; z-index: 2;">
-            <a href="sorry.png" target="_blank" style="
+            <a href="sorry.png" style="
                 text-decoration: none;
                 background: #00ffff;
                 color: #001428;
